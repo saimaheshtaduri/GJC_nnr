@@ -83,6 +83,10 @@ marquee {
   font-weight: bold;
 }
 
+marquee img{
+  height:50px;
+}
+
 marquee a {
   color: red;
 }
@@ -138,6 +142,19 @@ marquee a {
 {
   height:300px;
 }
+
+.admlink{
+  margin-top: 150px;
+  align-items: center;
+  background: linear-gradient(to right, #ffefba, #ffffff) ; 
+  padding:15px 35px; 
+  border-radius: 50px;
+}
+
+.admlink img{
+  height:50px
+}
+
 .gallery h1{
   text-align: center; 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
