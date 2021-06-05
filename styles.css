@@ -314,25 +314,25 @@ marquee a {
   display: none; 
 }
 
-.adm table{
+.adm table,.teaching table{
     margin:auto auto;  
     text-align: center;
     border:1px solid black;
 } 
 
-.adm th{
+.adm th,.teaching th{
   background-color: #0044cc;
   font-size: 20px;
   font-family: 'Raleway',sans-serif;
   color:white;
 } 
 
-.adm table td,.adm table th{
+.adm table td,.adm table th,.teaching td, .teaching th{
     padding:20px 40px; 
     border:0.5px solid white; 
 }
 
-.adm table td{
+.adm table td, .teaching table td{
   border-right:0.5px solid black; 
   font-size: 18px;
   font-family: 'Open Sans',sans-serif; 
