@@ -1,0 +1,426 @@
+body {
+  margin: 0;
+  color: #0044cc;
+  overflow-x: hidden;
+  display: hidden;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.head h1 {
+  margin-top: 15px;
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+  text-shadow: black 2px 2px;
+  display: inline-block;
+}
+
+.head span {
+  text-shadow: none;
+  letter-spacing: 1px;
+  color: #cc00cc;
+  font-size: 22px;
+  font-family: "Open Sans Condensed", cursive;
+}
+
+.head img {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 80px;
+  width: 80px;
+  position: relative;
+  top:-35px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #002b80;
+  align-items: center;
+}
+
+.nav button {
+  margin: 15px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.nav button:hover {
+  border-bottom: 2px solid white;
+}
+
+.nav .active {
+  background-color: whitesmoke;
+  color: #002b80;
+}
+
+
+
+/* ============================================================== home ======================================================== */
+
+.img {
+  width: 104vw;
+  height: 56vw;
+  position: relative;
+  left: -40px;
+  background-image: url("./clgefin.jpg");
+  background-size: 100% 100%;
+  opacity: 0.8;
+}
+
+marquee {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+marquee a {
+  color: red;
+}
+
+.img h1 {
+  padding: 20px;
+  text-align: center;
+  font-family: "Anton", cursive;
+  letter-spacing: 1px;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.details {
+  border: 0.2px solid black;
+  color: white;
+  background-color: #002b80;
+  padding: 20px;
+}
+
+.details .sections {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 70px; 
+}
+
+.details .sections h2 {
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 0.6px black; 
+}
+
+.details .sections .line {
+  border: 4px solid #ff8c1a;
+  width: 50px;
+}
+
+.sections ul, .sections p{
+  position: relative;
+  top:-30px;
+}
+
+.details .sections {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.details .sections .about,.facil
+{
+  height:300px;
+}
+.gallery h1{
+  text-align: center; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold; 
+  margin:30px; 
+}
+
+.slide{
+  border-radius: 8px;
+  margin:auto auto;
+  background-color: gray;
+  width:70vw;
+}
+
+.carousel-inner img{
+  margin: auto auto; 
+  height:400px; 
+}
+
+/* ============================================================== headings ======================================================== */
+
+.online,
+.staff,
+.circulars,
+.contact,
+.announcements,
+.implinks {
+  text-align: center;
+  display: none;
+}
+
+.line {
+  border: 4px solid #ff8c1a;
+  width: 50px;
+  margin-bottom: 50px;
+}
+
+.lc{
+  margin:auto auto;
+  margin-bottom: 50px;
+}
+
+.heading {
+  margin: 0;
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* ============================================================ o.c ========================================================= */
+
+.clss {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.clss h3{
+  text-decoration:underline;
+}
+
+.clss li{
+  font-family: "Open Sansa",sans-serif;
+  margin-bottom: 10px;
+  padding:5px 45px;
+  font-weight: 500;
+  background-color: #b35900;
+}
+
+.clss li a:hover{
+  background-color: white; 
+  color:#b35900;
+}
+
+.clss .two li{
+    background-color: #29a3a3;
+}
+
+.clss .two li a:hover{
+  color:#29a3a3;
+}
+
+.clss li a{
+  display: inline-block;
+  padding:5px 45px;
+  height: fit-content;
+  color:white
+}
+
+.one .left {
+  animation: left 0.8s 1 both ease-in-out;
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(-500px);
+  }
+}
+
+.two .right {
+  animation: right 0.8s 1 both ease-in-out;
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(500px);
+  }
+}
+
+/* ============================================================== staff ======================================================== */
+
+/* ============================================================== circulars ======================================================== */
+
+/* ============================================================== links ======================================================== */
+.implinks a{
+  margin:auto auto;
+  display: block; 
+  margin-top: 30px; 
+  padding:10px 0; 
+  width:100%;
+  max-width: 700px; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: white;
+  border-radius: 50px;
+} 
+
+.implinks a:hover{
+  opacity: 0.9;
+  transform: translateY(-10px); 
+  box-shadow: 1px 8px rgb(163, 163, 163)
+}
+/* ============================================================== announcements ======================================================== */
+.announcements button{
+   text-decoration: none;
+   padding:15px 35px;
+   border:1px solid black;
+   border-radius: 10px;
+   margin:30px;
+} 
+
+.announcements .adm{
+    width:80vw;
+    padding:30px;
+    margin:auto auto; 
+    display: block;
+} 
+
+.announcements .res{
+  width:100%; 
+  padding:10px; 
+  display: none;
+} 
+
+.announcements .news{
+  display: none; 
+}
+
+.adm table{
+    margin:auto auto;  
+    text-align: center;
+    border:1px solid black;
+} 
+
+.adm th{
+  background-color: #0044cc;
+  font-size: 20px;
+  font-family: 'Raleway',sans-serif;
+  color:white;
+} 
+
+.adm table td,.adm table th{
+    padding:20px 40px; 
+    border:0.5px solid white; 
+}
+
+.adm table td{
+  border-right:0.5px solid black; 
+  font-size: 18px;
+  font-family: 'Open Sans',sans-serif; 
+  font-weight: bold; 
+} 
+
+.res .first,.res .second{
+  width:100%; 
+  margin-top: 20px;
+  border:1px solid black;
+}
+
+
+.res table td,.res table th{
+    padding:10px 15px; 
+    border: 0.5px solid black;
+} 
+
+.res .first th{
+  background-color: #b35900
+}
+
+.res .second th{
+  background-color: #29a3a3
+}
+
+.res th{
+  font-family: 'Raleway',sans-serif;
+  color:white;
+} 
+
+.res .ress{
+  display: flex; 
+  justify-content:space-around;
+   align-items: center;
+}
+
+.announcements .adm_butt{
+  background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);; 
+  color:white;
+  font-weight: bold;
+} 
+
+.announcements .res_butt{
+   background-color: #29a3a3;
+   color:white;
+  font-weight: bold; 
+}
+
+.announcements .news_butt{
+  background-color: #b35900;
+  color: white;
+  font-weight: bold;
+} 
+
+.announcements .checked{
+   opacity: 0.7;
+   transform: translateY(-10px); 
+   box-shadow: 0px 10px grey;
+}
+
+
+/* ============================================================== contact ======================================================== */
+.contact p{
+   font-family: 'Open Sans',sans-serif; 
+   font-weight: 600;
+}
+
+/* ============================================================== footer ======================================================== */
+.foot{
+  margin-top: 100px; 
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'Raleway',sans-serif;
+  color:white;
+  background-color:#002b80 ;
+  padding-bottom: 30px;
+}
+
+.fa { 
+  width: 30px; 
+  height:30px;
+  text-align: center;
+  text-decoration: none; 
+  padding-top:8px;
+  margin:20px auto;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  background: white;
+  color: #3B5998;
+}
+
+.fa-twitter {
+  background: white;
+  color: #55ACEE;
+}
+
+.fa-linkedin {
+  background: white;
+  color: #007bb5;
+}
