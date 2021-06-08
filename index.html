@@ -1,662 +1,1137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Raleway:wght@700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Squada+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Limelight&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
-    <title>GJC Narnoor 30004</title> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>GJC Narnoor 30004</title>
     <style>
-       @media only screen and (max-width: 900px) { 
+      @media only screen and (max-width: 900px) {
+        .home {
+          overflow-x: hidden;
+        }
+        .nav button {
+          display: block;
+          width: 100%;
+        }
 
-          .home{
-            overflow-x:hidden
-          }
-          .nav button{ 
-              display: block;  
-              width:100%;
-          } 
+        .head {
+          padding: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
 
-          .head{
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
+        .head h1 {
+          padding: 0;
+          text-align: unset;
+          display: inline;
+          font-size: 20px;
+          text-shadow: none;
+        }
+        .head img {
+          display: inline-block;
+          margin-top: 42px;
+          width: 40px;
+          height: 40px;
+        }
+        .head span {
+          font-size: 15px;
+        }
 
-          .head h1{
-            padding: 0;
-            text-align: unset;
-            display: inline;
-            font-size: 20px;
-            text-shadow: none; 
-          }
-          .head img{ 
-             display: inline-block;
-             margin-top: 42px;
-             width:40px;
-             height:40px;
-          }
-          .head span{
-            font-size: 15px;
-          } 
+        marquee {
+          font-size: 1rem;
+        }
 
-          marquee{
-            font-size: 1rem;
-          }  
+        marquee img {
+          height: 25px;
+        }
 
-          marquee img{
-             height:25px;
-          }
+        .details .sections .crcs {
+          display: none;
+        }
 
-          .details .sections .crcs{
-             display: none;
-          }
+        .details .sections {
+          display: block;
+          text-align: center;
+        }
 
-          .details .sections{
-            display: block; 
-            text-align: center;
-          } 
+        .line {
+          margin: auto auto;
+          margin-bottom: 50px;
+        }
 
-          .line{
-            margin:auto auto ;
-            margin-bottom: 50px;
-          } 
+        .img {
+          width: 120%;
+          position: relative;
+          left: -5%;
+        }
 
-          .img{
-            width:120%;
-            position: relative;
-            left:-5%;
-          }  
+        .img h1 {
+          margin-top: 30px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 1.3rem;
+        }
 
-          .img h1{
-            margin-top: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 1.3rem;
-          } 
+        .img .line {
+          border: 2px solid #ff8c1a;
+        }
 
-          .img .line{
-            border: 2px solid #ff8c1a;
-          }
-          
-          .admlink{
-            margin-top: 30px; 
-            padding:5px; 
-            font-size: 1rem;
-          } 
+        .admlink {
+          margin-top: 30px;
+          padding: 5px;
+          font-size: 1rem;
+        }
 
-          .admlink img{
-             height:25px
-          }
-          .sections a{
-            font-size: 0.9rem;
-            padding:0 ; 
-          } 
+        .admlink img {
+          height: 25px;
+        }
+        .sections a {
+          font-size: 0.9rem;
+          padding: 0;
+        }
 
-          .sections p, .sections ul{
-            font-size: 1rem;
-          }
+        .sections p,
+        .sections ul {
+          font-size: 1rem;
+        }
 
-          .details .sections .about{
-             height:200px; 
-             margin-bottom: 30px;
-          }  
+        .details .sections .about {
+          height: 200px;
+          margin-bottom: 30px;
+        }
 
-          .details .sections .facil{
-            height:160px;
-            margin-bottom: 30px;
-          }
+        .details .sections .facil {
+          height: 160px;
+          margin-bottom: 30px;
+        }
 
-          .slide{
-            width:95vw;
-          }
+        .slide {
+          width: 95vw;
+        }
 
-          .carousel-inner img{
-            margin: auto auto; 
-            width:80%;
-          } 
+        .carousel-inner img {
+          margin: auto auto;
+          width: 80%;
+        }
 
-          .carousel-inner .sec{
-            height:80%;
-            width:100%;
-          }
+        .carousel-inner .sec {
+          height: 80%;
+          width: 100%;
+        }
 
-          .announcements button{
-              font-size: 0.8rem;
-              padding: 10px 20px;
-              margin:5px 
-              
-          }
+        .announcements button {
+          font-size: 0.8rem;
+          padding: 10px 20px;
+          margin: 5px;
+        }
 
-          .announcements .adm{  
-            margin-left: 0;
-            margin-bottom: 0;
-            padding:50px 0;
-            width:100%;
-            overflow-x: scroll;
-          }
+        .announcements .adm {
+          margin-left: 0;
+          margin-bottom: 0;
+          padding: 50px 0;
+          width: 100%;
+          overflow-x: scroll;
+        }
 
-          .announcements .res {
-            margin-left: 0;
-            margin-bottom: 0;
-            padding:50px 0;
-          }
+        .announcements .res {
+          margin-left: 0;
+          margin-bottom: 0;
+          padding: 50px 0;
+        }
 
-          .announcements table th,.announcements table td{  
-            font-size: 1rem;
-            padding: 5px 15px; 
-          } 
+        .announcements table th,
+        .announcements table td {
+          font-size: 1rem;
+          padding: 5px 15px;
+        }
 
-          .announcements .res table th,.announcements .res table td{
-            font-size: 1rem;
-            padding: 5px 10px;;
-          }
+        .announcements .res table th,
+        .announcements .res table td {
+          font-size: 1rem;
+          padding: 5px 10px;
+        }
 
-          .res .ress{
-            display: block;
-          } 
+        .res .ress {
+          display: block;
+        }
 
-          .res .first{
-            margin-bottom: 50px;
-          }
+        .res .first {
+          margin-bottom: 50px;
+        }
 
-          .res{
-            overflow-x: scroll;
-          }
-        
-          .clss li{
-              font-size: 1rem;
-              padding:5px 10px;
-              font-weight: 300;
-            } 
+        .res {
+          overflow-x: scroll;
+        }
 
-            .clss li a{
-              display: inline-block;
-              padding:5px 10px ;
-            }
+        .clss li {
+          font-size: 1rem;
+          padding: 5px 10px;
+          font-weight: 300;
+        }
 
-            .clss h3{
-              font-size: 1.2rem;
-            } 
+        .clss li a {
+          display: inline-block;
+          padding: 5px 10px;
+        }
 
-            .contact{
-              padding:5px;
-            } 
+        .clss h3 {
+          font-size: 1.2rem;
+        }
 
-            .staff{
-               overflow-x:hidden
-            }
+        .contact {
+          padding: 5px;
+        }
 
-            .teaching{
-              overflow-x: scroll;
-            }
+        .staff {
+          overflow-x: hidden;
+        }
 
-            .foot p{
-              font-size:0.7rem;
-              font-weight: unset;
-            }
-}
+        .teaching {
+          overflow-x: scroll;
+        }
 
+        .foot p {
+          font-size: 0.7rem;
+          font-weight: unset;
+        }
+      }
     </style>
-</head>
-<body>
-<div class="head">
-    <img class="one" src="https://tsbie.cgg.gov.in/img/telanganalogo.png"/>
-    <h1>GOVERNMENT JUNIOR COLLEGE NARNOOR - 30004 <br><span><i>step in...  for your bright future.</i></span> </h1>
-    <img src="https://tsbie.cgg.gov.in/img/bie_logo.png"/> 
-</div>
+  </head>
+  <body>
+    <div class="head">
+      <img class="one" src="https://tsbie.cgg.gov.in/img/telanganalogo.png" />
+      <h1>
+        GOVERNMENT JUNIOR COLLEGE NARNOOR - 30004 <br /><span
+          ><i>step in... for your bright future.</i></span
+        >
+      </h1>
+      <img src="https://tsbie.cgg.gov.in/img/bie_logo.png" />
+    </div>
 
-<div class="nav">
-    <button class="hm">Home</button>
-    <button class="oc">Online Classes</button>
-    <button class="stff">Staff</button>
-    <button class="cr">Circulars</button>
-    <button class="il">Important Links</button>
-    <button class="ann">Announcements</button>
-    <button class="conc">Contact Us</button>
-</div>
+    <div class="nav">
+      <button class="hm">Home</button>
+      <button class="oc">Online Classes</button>
+      <button class="stff">Staff</button>
+      <button class="cr">Circulars</button>
+      <button class="il">Important Links</button>
+      <button class="ann">Announcements</button>
+      <button class="conc">Contact Us</button>
+    </div>
 
-<marquee><img  src="https://www.hia-li.org/wp-content/uploads/2019/06/click-here-button-300x87.png"/>
-    <a href="https://tsbie.cgg.gov.in/bieFirstYearAdmission.do">FOR 1st YEAR ADMISSIONS 2021-22</a></marquee> 
+    <marquee
+      ><img
+        src="https://www.hia-li.org/wp-content/uploads/2019/06/click-here-button-300x87.png"
+      />
+      <a href="https://tsbie.cgg.gov.in/bieFirstYearAdmission.do"
+        >FOR 1st YEAR ADMISSIONS 2021-22</a
+      ></marquee
+    >
 
-<div class="home">
-    <div class="img">
-        <h1>Welcome..</h1> 
+    <div class="home">
+      <div class="img">
+        <h1>Welcome..</h1>
         <div class="line lc"></div>
-    </div>
-    
-    <div class="details"> 
-        <div class="sections">
-            <div>
-                <img class="about" style="border-radius: 20px; margin-right: 50px; border:2px solid black;" src="./about.jpg" alt="img1" />
-            </div>
-            <div>
-                <h2>About</h2> 
-                <div class="line"></div>
-                <p>
-                    Education is all about creating an environment of academic freedom, where bright minds meet, discover and learn.<br>
-                    <b>VISION</b> : To Provide free and affordable Quality Education to students with knowledge and skills in their chosen streams.<br>
-                    <b>MISSION</b> :  Our college fosters academic and career success through the development of critical thinking, effective communication, creativity, and cultural awareness in a safe, accessible and affordable learning environment.<br>
-                    <b>HISTORY</b> : Our college Established in 2008 as per GOM.S.no.130, date: 27.07.2008 and GOM.S.no.796, date: 19.08.2008.<br> Our college is located in G.P. and mandal NARNOOR,survey no.102/1 PP, towards Gadiguda route, near Mahagoav village.
-                    <br>We are extremely proud of our students and staff who are always eager to learn, create and grow together.
-                     </p>
-                
-            </div>
-        </div> 
-    
-        <div class="sections c">
-            <div>
-                <h2>Courses Offered</h2> 
-                <div class="line"></div>
-                <ul>
-                    <li>BiPC - TM</li>
-                    <li>CEC - TM</li>
-                    <li>HEC - TM</li>
-                </ul>
-            </div>
-            <div class="admlink">
-                <img src="https://www.hia-li.org/wp-content/uploads/2019/06/click-here-button-300x87.png"/>
-                <a style="font-weight:bolder ; color:tomato" href="https://tsbie.cgg.gov.in/bieFirstYearAdmission.do">1st Year Admissions 2021-22</a>
-            </div>
-            <div class="crcs"> 
-                <img style="height:300px ; border-radius: 20px;float:right; margin-left: 50px; border:2px solid black;" src="./crcs.jpg" alt="img1" />
-            </div>
-        </div>
-    
-        <div class="sections">
-            <div>
-                <img class="facil" style="border-radius: 20px; margin-right: 50px; border:2px solid black;" src="./facilities.jpg" alt="img1" />
-            </div>
-            <div>
-                <h2>Facilities </h2> 
-                <div class="line"></div>
-                <ul>
-                    <li>Online Classroom teaching with covid-19 protocol</li>
-                    <li>Free Inter Education</li>
-                    <li>Free Textbooks</li>
-                    <li>Well Experienced and Dedicated Staff</li>
-                    <li>SC-ST-BC-Minority Scholarships</li>
-                    <li>Well Established Own college Building</li>
-                    <li>Vast Classrooms, Laboratories, Library</li> 
-                    <li>Peaceful Environment</li> 
-                    <li>NSS , Spoken English , Career Guidance</li> 
-                    <li>Conduct of study hours , Sliptest , Unittest, half yearly and prefinal exams</li> 
-                    <li>Supervision and Awareness classes by SHE Teams </li> 
-                </ul>
-            </div>
-        </div> 
-    
-    </div> 
-    
-    <div class="gallery">
-        <h1>Gallery</h1> 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-400"  src="./one.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400 sec"  src="./two.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400"   src="./three.jpg" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400"  src="./four.jpg" alt="Fourth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400"  src="./five.jpg" alt="Fifth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400"  src="./six.jpg" alt="Sixth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400"  src="./seven.jpg" alt="Seventh slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400"  src="./eight.jpg" alt="Eighth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400"  src="./none.jpg" alt="Ninth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400"  src="./ten.jpg" alt="Tenth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400"  src="./eleven.jpg" alt="Tenth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-400"  src="./twelve.jpg" alt="Tenth slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-</div>
+      </div>
 
-<div class="online">
-    <h1 class="heading">Online Classes</h1>
-    <div class="line lc"></div>
-    <div class="clss">
+      <div class="details">
+        <div class="sections">
+          <div>
+            <img
+              class="about"
+              style="
+                border-radius: 20px;
+                margin-right: 50px;
+                border: 2px solid black;
+              "
+              src="./about.jpg"
+              alt="img1"
+            />
+          </div>
+          <div>
+            <h2>About</h2>
+            <div class="line"></div>
+            <p>
+              Education is all about creating an environment of academic
+              freedom, where bright minds meet, discover and learn.<br />
+              <b>VISION</b> : To Provide free and affordable Quality Education
+              to students with knowledge and skills in their chosen streams.<br />
+              <b>MISSION</b> : Our college fosters academic and career success
+              through the development of critical thinking, effective
+              communication, creativity, and cultural awareness in a safe,
+              accessible and affordable learning environment.<br />
+              <b>HISTORY</b> : Our college Established in 2008 as per
+              GOM.S.no.130, date: 27.07.2008 and GOM.S.no.796, date:
+              19.08.2008.<br />
+              Our college is located in G.P. and mandal NARNOOR,survey no.102/1
+              PP, towards Gadiguda route, near Mahagoav village. <br />We are
+              extremely proud of our students and staff who are always eager to
+              learn, create and grow together.
+            </p>
+          </div>
+        </div>
+
+        <div class="sections c">
+          <div>
+            <h2>Courses Offered</h2>
+            <div class="line"></div>
+            <ul>
+              <li>BiPC - TM</li>
+              <li>CEC - TM</li>
+              <li>HEC - TM</li>
+            </ul>
+          </div>
+          <div class="admlink">
+            <img
+              src="https://www.hia-li.org/wp-content/uploads/2019/06/click-here-button-300x87.png"
+            />
+            <a
+              style="font-weight: bolder; color: tomato"
+              href="https://tsbie.cgg.gov.in/bieFirstYearAdmission.do"
+              >1st Year Admissions 2021-22</a
+            >
+          </div>
+          <div class="crcs">
+            <img
+              style="
+                height: 300px;
+                border-radius: 20px;
+                float: right;
+                margin-left: 50px;
+                border: 2px solid black;
+              "
+              src="./crcs.jpg"
+              alt="img1"
+            />
+          </div>
+        </div>
+
+        <div class="sections">
+          <div>
+            <img
+              class="facil"
+              style="
+                border-radius: 20px;
+                margin-right: 50px;
+                border: 2px solid black;
+              "
+              src="./facilities.jpg"
+              alt="img1"
+            />
+          </div>
+          <div>
+            <h2>Facilities</h2>
+            <div class="line"></div>
+            <ul>
+              <li>Online Classroom teaching with covid-19 protocol</li>
+              <li>Free Inter Education</li>
+              <li>Free Textbooks</li>
+              <li>Well Experienced and Dedicated Staff</li>
+              <li>SC-ST-BC-Minority Scholarships</li>
+              <li>Well Established Own college Building</li>
+              <li>Vast Classrooms, Laboratories, Library</li>
+              <li>Peaceful Environment</li>
+              <li>Academic Councellor, Stress-free Education & Meditation</li>
+              <li>NSS , Spoken English , Career Guidance</li>
+              <li>
+                Conduct of study hours , Sliptest , Unittest, half yearly and
+                prefinal exams
+              </li>
+              <li>Supervision and Awareness classes by SHE Teams</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <h1>Gallery</h1>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="10"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="11"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="12"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="13"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="14"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="15"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="16"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="17"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="18"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="19"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="20"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="21"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="22"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="23"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="24"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="25"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="26"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="27"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="28"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="29"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="30"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="31"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="32"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="33"
+            ></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-400" src="./A.jpg" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400 sec" src="./B.jpg" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./C.jpg" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./D.jpg" alt="Fourth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./E.jpg" alt="Fifth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./F.jpg" alt="Sixth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./G.jpg" alt="Seventh slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./H.jpg" alt="Eighth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./I.jpg" alt="Ninth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./J.jpg" alt="Tenth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./K.jpg" alt="Eleventh slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./L.png" alt="Twelvethth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./M.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./N.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./O.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./P.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Q.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./R.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./S.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./T.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./U.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./V.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./W.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./X.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Y.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Z.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Z1.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Z2.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Z4.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Z5.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Z6.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Z7.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Z8.jpg" alt="Twelveth slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-400" src="./Z9.jpg" alt="Twelveth slide" />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="online">
+      <h1 class="heading">Online Classes</h1>
+      <div class="line lc"></div>
+      <div class="clss">
         <div class="one">
-         <h3 style="font-family:sans-serif;">First Year</h3>
-         <ul type="none">
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+telugu">Telugu I </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+hindi">Hindi I </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+english">English I</a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+botony">Botany I</a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+zoology">Zoology I </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+physics">Physics I </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+chemistry">Chemistry I </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+civics">Civics I </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+economics">Economics I </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+commerce">Commerce I </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+history">History I </a></li>
-         </ul>
+          <h3 style="font-family: sans-serif">First Year</h3>
+          <ul type="none">
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+telugu"
+                >Telugu I
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+hindi"
+                >Hindi I
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+english"
+                >English I</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+botony"
+                >Botany I</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+zoology"
+                >Zoology I
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+physics"
+                >Physics I
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+chemistry"
+                >Chemistry I
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+civics"
+                >Civics I
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+economics"
+                >Economics I
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+commerce"
+                >Commerce I
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+first+year+history"
+                >History I
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="two">
-          <h3 style="font-family:sans-serif;">Second Year</h3>
+          <h3 style="font-family: sans-serif">Second Year</h3>
           <ul type="none">
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+telugu">Telugu II </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+hindi">Hindi II </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+english">English II</a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+botony">Botany II</a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+zoology">Zoology II </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+physics">Physics II </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+chemistry">Chemistry II </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+civics">Civics II </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+economics">Economics II </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+commerce">Commerce II </a></li>
-            <li><a href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+history">History II </a></li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+telugu"
+                >Telugu II
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+hindi"
+                >Hindi II
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+english"
+                >English II</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+botony"
+                >Botany II</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+zoology"
+                >Zoology II
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+physics"
+                >Physics II
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+chemistry"
+                >Chemistry II
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+civics"
+                >Civics II
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+economics"
+                >Economics II
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+commerce"
+                >Commerce II
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=dd+yadagiri+inter+second+year+history"
+                >History II
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-</div>
+    </div>
 
-<div class="staff">
-    <h1 class="heading">Staff Section</h1>
-    <div class="line lc"></div> 
-    <div class="teaching"> 
-      <h2 style="margin-bottom: 30px;">Teaching Staff</h2> 
-      <table>
-        <tr>
+    <div class="staff">
+      <h1 class="heading">Staff Section</h1>
+      <div class="line lc"></div>
+      <div class="teaching">
+        <h2 style="margin-bottom: 30px">Teaching Staff</h2>
+        <table>
+          <tr>
             <th>s.no</th>
-            <th>Name </th>
+            <th>Name</th>
             <th>Designation</th>
             <th>Subject</th>
             <th>Qualification</th>
             <th>Experience (in yrs)</th>
-            
-        </tr>
-        <tr>
-          <td  style="border-left:0.5px solid black">1</td>
-          <td>T.MAHENDAR KUMAR</td>
-          <td>Principal</td>
-          <td>Zoology</td>
-          <td>MA, MSc, MEd, MPhil</td>
-          <td>22</td> 
-      </tr> 
-      <tr>
-        <td  style="border-left:0.5px solid black">2</td>
-        <td>P.UDAY KUMAR</td>
-        <td>Jr. Lecturer</td>
-        <td>History</td>
-        <td>MA</td>
-        <td>02</td>  
-       </tr> 
-       <tr>
-          <td  style="border-left:0.5px solid black">3</td>
-          <td>K.VENKATA RAMANA</td>
-          <td>Jr. Lecturer</td>
-          <td>Physics</td>
-          <td>MSc, BEd</td>
-          <td>17</td> 
-        </tr>
-         <tr>
-            <td  style="border-left:0.5px solid black">4</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">1</td>
+            <td>T.MAHENDAR KUMAR</td>
+            <td>Principal</td>
+            <td>Zoology</td>
+            <td>MA, MSc, MEd, MPhil</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">2</td>
+            <td>P.UDAY KUMAR</td>
+            <td>Jr. Lecturer</td>
+            <td>History</td>
+            <td>MA</td>
+            <td>02</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">3</td>
+            <td>K.VENKATA RAMANA</td>
+            <td>Jr. Lecturer</td>
+            <td>Physics</td>
+            <td>MSc, BEd</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">4</td>
             <td>K.BALAJI</td>
             <td>Jr. Lecturer</td>
             <td>Hindi</td>
             <td>MA, MPhil</td>
-            <td>17</td> 
-        </tr><tr>
-          <td  style="border-left:0.5px solid black">5</td>
-          <td>L.SUJATHA</td>
-          <td>Jr. Lecturer</td>
-          <td>Civics</td>
-          <td>MA, BEd</td>
-          <td>15</td> 
-      </tr><tr>
-        <td  style="border-left:0.5px solid black">6</td>
-        <td>T.UDAY REDDY</td>
-        <td>Jr. Lecturer</td>
-        <td>Commerce</td>
-        <td>MCom, BEd</td>
-        <td>13</td> 
-        </tr><tr>
-        <td  style="border-left:0.5px solid black">7</td>
-        <td>D.SUJATHA</td>
-        <td>Jr. Lecturer</td>
-        <td>Economics</td>
-        <td>MA, BEd</td>
-        <td>13</td> 
-      </tr><tr>
-        <td  style="border-left:0.5px solid black">8</td>
-        <td>R.SRINIVAS</td>
-        <td>Jr. Lecturer</td>
-        <td>Telugu</td>
-        <td>MA TPT</td>
-        <td>13</td> 
-      </tr>
-      <tr>
-        <td  style="border-left:0.5px solid black">9</td>
-        <td>L.SHARADA</td>
-        <td>Jr. Lecturer</td>
-        <td>Zoology</td>
-        <td>MSc, BEd</td>
-        <td>13</td> 
-      </tr>
-      <tr>
-        <td  style="border-left:0.5px solid black">10</td>
-        <td>C.NARESH</td>
-        <td>Jr. Lecturer</td>
-        <td>Botany</td>
-        <td>MSc, BEd</td>
-        <td>13</td> 
-      </tr><tr>
-        <td  style="border-left:0.5px solid black">11</td>
-        <td>Y.THIRUPATHI REDDY</td>
-        <td>Jr. Lecturer</td>
-        <td>English</td>
-        <td>MA, BEd</td>
-        <td>13</td> 
-      </tr>
-      <tr>
-        <td  style="border-left:0.5px solid black">12</td>
-        <td>B.NAGESWAR RAO</td>
-        <td>Jr. Lecturer</td>
-        <td>Chemistry</td>
-        <td>MSc, BEd</td> 
-        <td>13</td> 
-      </tr>
-      </table>
-      <hr>
-    </div>
-    <div class="teaching"> 
-      <h2 style="margin-bottom: 30px;">Non-Teaching Staff</h2> 
-      <table>
-        <tr>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">5</td>
+            <td>L.SUJATHA</td>
+            <td>Jr. Lecturer</td>
+            <td>Civics</td>
+            <td>MA, BEd</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">6</td>
+            <td>T.UDAY REDDY</td>
+            <td>Jr. Lecturer</td>
+            <td>Commerce</td>
+            <td>MCom, BEd</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">7</td>
+            <td>D.SUJATHA</td>
+            <td>Jr. Lecturer</td>
+            <td>Economics</td>
+            <td>MA, BEd</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">8</td>
+            <td>R.SRINIVAS</td>
+            <td>Jr. Lecturer</td>
+            <td>Telugu</td>
+            <td>MA TPT</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">9</td>
+            <td>L.SHARADA</td>
+            <td>Jr. Lecturer</td>
+            <td>Zoology</td>
+            <td>MSc, BEd</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">10</td>
+            <td>C.NARESH</td>
+            <td>Jr. Lecturer</td>
+            <td>Botany</td>
+            <td>MSc, BEd</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">11</td>
+            <td>Y.THIRUPATHI REDDY</td>
+            <td>Jr. Lecturer</td>
+            <td>English</td>
+            <td>MA, BEd</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">12</td>
+            <td>B.NAGESWAR RAO</td>
+            <td>Jr. Lecturer</td>
+            <td>Chemistry</td>
+            <td>MSc, BEd</td>
+            <td>13</td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+      <div class="teaching">
+        <h2 style="margin-bottom: 30px">Non-Teaching Staff</h2>
+        <table>
+          <tr>
             <th>s.no</th>
-            <th>Name </th>
+            <th>Name</th>
             <th>Designation</th>
             <th>Subject</th>
             <th>Qualification</th>
             <th>Experience (in yrs)</th>
-            
-        </tr>
-        <tr>
-          <td  style="border-left:0.5px solid black">1</td>
-          <td>A.BHAGYA LAXMI</td>
-          <td>Junior Asst.</td>
-          <td>Jr. Assistant</td>
-          <td>BSc.BEd</td>
-          <td>01</td> 
-        </tr>
-        <tr>
-          <td  style="border-left:0.5px solid black">2</td>
-          <td>CH.RUKMINI</td>
-          <td>Office Subordinate</td>
-          <td>OS</td>
-          <td>Intermediate</td>
-          <td>13</td> 
-        </tr>
-      </table>
-
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">1</td>
+            <td>A.BHAGYA LAXMI</td>
+            <td>Junior Asst.</td>
+            <td>Jr. Assistant</td>
+            <td>BSc.BEd</td>
+            <td>01</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">2</td>
+            <td>CH.RUKMINI</td>
+            <td>Office Subordinate</td>
+            <td>OS</td>
+            <td>Intermediate</td>
+            <td>13</td>
+          </tr>
+        </table>
+      </div>
     </div>
-</div>
 
-<div class="circulars">
-    <h1 class="heading">Circulars Section</h1>
-    <div class="line lc"></div>
-</div>
+    <div class="circulars">
+      <h1 class="heading">Circulars Section</h1>
+      <div class="line lc"></div>
+    </div>
 
-<div class="implinks">
-    <h1 class="heading">Links Section</h1>
-    <div class="line lc"></div>
-    <a style="background: linear-gradient(to right, #00467f, #a5cc82);" href="https://tsbie.cgg.gov.in/studentServices.do">Student Online Services</a>
-    <a  style="background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);" href="https://acadtsbie.cgg.gov.in">Acadamic Services</a>
-    <a style="background: linear-gradient(to right, #b79891, #94716b);" href="https://tsbie.cgg.gov.in/login.do">College Services</a> 
-    <a style="background: linear-gradient(to right, #bbd2c5, #536976, #292e49);" href="https://tsbie.cgg.gov.in/bieFirstYearAdmission.do">GJC Online Admissions</a>
-    <a style="background: linear-gradient(to right, #ffe000, #799f0c);" href="https://telanganaepass.cgg.gov.in/">E Pass | Scholarships</a>
-    <a style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364); " href="https://ag.ap.nic.in/slipsgpf.aspx">AG GPF SLIPS </a>
-    <a style="background: linear-gradient(to right, #799f0c, #acbb78);" href="http://www.tsgli.telangana.gov.in/AnnualReport.aspx">TS GLI SLIPS</a>
-</div>
+    <div class="implinks">
+      <h1 class="heading">Links Section</h1>
+      <div class="line lc"></div>
+      <a
+        style="background: linear-gradient(to right, #00467f, #a5cc82)"
+        href="https://tsbie.cgg.gov.in/studentServices.do"
+        >Student Online Services</a
+      >
+      <a
+        style="background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc)"
+        href="https://acadtsbie.cgg.gov.in"
+        >Acadamic Services</a
+      >
+      <a
+        style="background: linear-gradient(to right, #b79891, #94716b)"
+        href="https://tsbie.cgg.gov.in/login.do"
+        >College Services</a
+      >
+      <a
+        style="background: linear-gradient(to right, #bbd2c5, #536976, #292e49)"
+        href="https://tsbie.cgg.gov.in/bieFirstYearAdmission.do"
+        >GJC Online Admissions</a
+      >
+      <a
+        style="background: linear-gradient(to right, #ffe000, #799f0c)"
+        href="https://telanganaepass.cgg.gov.in/"
+        >E Pass | Scholarships</a
+      >
+      <a
+        style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364)"
+        href="https://ag.ap.nic.in/slipsgpf.aspx"
+        >AG GPF SLIPS
+      </a>
+      <a
+        style="background: linear-gradient(to right, #799f0c, #acbb78)"
+        href="http://www.tsgli.telangana.gov.in/AnnualReport.aspx"
+        >TS GLI SLIPS</a
+      >
+    </div>
 
-<div class="announcements">
-    <h1 class="heading">Announcements Section</h1>
-    <div class="line lc"></div>
-    <button class="adm_butt checked">ADMISSIONS</button> 
-      
-    <button class="res_butt">RESULTS</button>
-    
-    <button class="news_butt">NEWS BULLETIN</button>  
+    <div class="announcements">
+      <h1 class="heading">Announcements Section</h1>
+      <div class="line lc"></div>
+      <button class="adm_butt checked">ADMISSIONS</button>
 
-    <div class="adm">
-      <table>
-        <tr>
+      <button class="res_butt">RESULTS</button>
+
+      <button class="news_butt">NEWS BULLETIN</button>
+
+      <div class="adm">
+        <table>
+          <tr>
             <th>s.no</th>
             <th>Academic Year</th>
             <th>Boys</th>
             <th>Girls</th>
             <th>Total</th>
-        </tr>
-        <tr>
-            <td  style="border-left:0.5px solid black">1</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">1</td>
+            <td>2018-19</td>
+            <td>37</td>
+            <td>40</td>
+            <td>77</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">2</td>
+            <td>2019-20</td>
+            <td>95</td>
+            <td>72</td>
+            <td>167</td>
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">3</td>
             <td>2020-21</td>
-            <td>50</td>
-            <td>52</td>
+            <td>61</td>
+            <td>41</td>
             <td>102</td>
-        </tr>
-      </table>
-    </div> 
-
-    <div class="res"> 
-      <div class="ress"> 
-         <div> 
-          <h3 style="font-family:sans-serif;">First Year</h3>
-          <table class="first">  
-            <tr>
-                <th>s.no</th>
-                <th>Year</th>
-                <th>Appeared</th>
-                <th>passed</th>
-                <th>percentage ( % )</th>
-            </tr>
-            <tr>
-                <td  style="border-left:0.5px solid black">1</td>
-                <td>2020-21</td>
-                <td>50</td>
-                <td>52</td>
-                <td>102</td>
-            </tr>
-          </table>
-        </div>
-        <div>
-          <h3 style="font-family:sans-serif;">Second Year</h3>
-          <table class="second">
-            <tr>
-                <th>s.no</th>
-                <th>Year</th>
-                <th>Appeared</th>
-                <th>passed</th>
-                <th>percentage ( % )</th>
-            </tr>
-            <tr>
-                <td  style="border-left:0.5px solid black">1</td>
-                <td>2020-21</td>
-                <td>50</td>
-                <td>52</td>
-                <td>102</td>
-            </tr>
-          </table>
-        </div> 
+          </tr>
+          <tr>
+            <td style="border-left: 0.5px solid black">4</td>
+            <td>2021-22</td> 
+            <td></td>
+            <td></td>
+            <td>Admissions are in Progress</td>
+          </tr>
+        </table>
       </div>
-    </div> 
 
-    <div class="news">
-        <p>2021-22 Admissions are Open. Go to https://tsbie.cgg.gov.in, Click Govt. Jr. College Online Admissions and Enter your Details</p>
+      <div class="res">
+        <div class="ress">
+          <div>
+            <h3 style="font-family: sans-serif">First Year</h3>
+            <table class="first">
+              <tr>
+                <th>s.no</th>
+                <th>Year</th>
+                <th>Appeared</th>
+                <th>passed</th>
+                <th>percentage ( % )</th>
+              </tr>
+              <tr>
+                <td style="border-left: 0.5px solid black">1</td>
+                <td>2020-21</td>
+                <td>50</td>
+                <td>52</td>
+                <td>102</td>
+              </tr>
+              <tr>
+                <td style="border-left: 0.5px solid black">1</td>
+                <td>2020-21</td>
+                <td>50</td>
+                <td>52</td>
+                <td>102</td>
+              </tr>
+              <tr>
+                <td style="border-left: 0.5px solid black">1</td>
+                <td>2020-21</td>
+                <td>50</td>
+                <td>52</td>
+                <td>102</td>
+              </tr>
+              <tr>
+                <td style="border-left: 0.5px solid black">1</td>
+                <td>2020-21</td>
+                <td>50</td>
+                <td>52</td>
+                <td>102</td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <h3 style="font-family: sans-serif">Second Year</h3>
+            <table class="second">
+              <tr>
+                <th>s.no</th>
+                <th>Year</th>
+                <th>Appeared</th>
+                <th>passed</th>
+                <th>percentage ( % )</th>
+              </tr>
+              <tr>
+                <td style="border-left: 0.5px solid black">1</td>
+                <td>2020-21</td>
+                <td>50</td>
+                <td>52</td>
+                <td>102</td>
+              </tr>
+              <tr>
+                <td style="border-left: 0.5px solid black">1</td>
+                <td>2020-21</td>
+                <td>50</td>
+                <td>52</td>
+                <td>102</td>
+              </tr>
+              <tr>
+                <td style="border-left: 0.5px solid black">1</td>
+                <td>2020-21</td>
+                <td>50</td>
+                <td>52</td>
+                <td>102</td>
+              </tr>
+              <tr>
+                <td style="border-left: 0.5px solid black">1</td>
+                <td>2020-21</td>
+                <td>50</td>
+                <td>52</td>
+                <td>102</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="news">
+        <p>
+          2021-22 Admissions are Open. Go to https://tsbie.cgg.gov.in, Click
+          Govt. Jr. College Online Admissions and Enter your Details
+        </p>
+      </div>
     </div>
-</div>
 
-<div class="contact">
-    <h1 class="heading">Contact Section</h1>
-    <div class="line lc"></div>
-    <p>Government Junior College, Narnoor, Adilabad Dist-504311</p>  
-    <p>Mobile no: 94416448962 , 7981223264 , 9491463505 </p>
-    <p>Email: gjcnarnoor@gmail.com</p>
-</div>
+    <div class="contact">
+      <h1 class="heading">Contact Section</h1>
+      <div class="line lc"></div>
+      <p>Government Junior College, Narnoor, Adilabad Dist-504311</p>
+      <p>Mobile no: 94416448962 , 7981223264 , 9491463505</p>
+      <p>Email: gjcnarnoor@gmail.com</p>
+    </div>
 
-<div class="foot"> 
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-linkedin"></a>
+    <div class="foot">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
 
-    <p>© copyright 2021-22 <br> TADURI MAHENDAR KUMAR  &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp; PRINCIPAL  <br> GJC NARNOOR <br> All rights reserved .</p>
-    
-</div>
+      <p>
+        © copyright 2021-22 <br />
+        TADURI MAHENDAR KUMAR &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp; PRINCIPAL
+        <br />
+        GJC NARNOOR <br />
+        All rights reserved .
+      </p>
+    </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="func.js" ></script>
-
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="func.js"></script>
+  </body>
 </html>
