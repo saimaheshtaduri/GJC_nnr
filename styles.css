@@ -2,7 +2,6 @@ body {
   margin: 0;
   color: #0044cc;
   overflow-x: hidden;
-  display: hidden;
 }
 
 .head {
@@ -58,12 +57,6 @@ body {
   border-bottom: 2px solid white;
 }
 
-.nav .active {
-  background-color: whitesmoke;
-  color: #002b80;
-}
-
-
 
 /* ============================================================== home ======================================================== */
 
@@ -72,7 +65,7 @@ body {
   height: 56vw;
   position: relative;
   left: -40px;
-  background-image: url("./clgefin.jpg");
+  background-image: url("./images/clgefin.jpg");
   background-size: 100% 100%;
   opacity: 0.8;
 }
@@ -183,7 +176,7 @@ marquee a {
 .announcements,
 .implinks {
   text-align: center;
-  display: none;
+  /* display: none; */
 }
 
 .line {

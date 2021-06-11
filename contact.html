@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>GJC Narnoor 30004</title>
+    <style>
+      @media only screen and (max-width: 900px) {
+        .home {
+          overflow-x: hidden;
+        }
+        .nav a{ 
+          text-align: center;
+          display: block;
+          width: 100%; 
+        }
+
+        .head {
+          padding: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .head h1 {
+          padding: 0;
+          text-align: unset;
+          display: inline;
+          font-size: 20px;
+          text-shadow: none;
+        }
+        .head img {
+          display: inline-block;
+          margin-top: 42px;
+          width: 40px;
+          height: 40px;
+        }
+        .head span {
+          font-size: 15px;
+        }
+
+        marquee {
+          font-size: 1rem;
+        }
+
+        marquee img {
+          height: 25px;
+        }
+
+        .line {
+          margin: auto auto;
+          margin-bottom: 50px;
+        }
+
+        .contact {
+          padding: 5px;
+        }
+
+        .foot p {
+          font-size: 0.7rem;
+          font-weight: unset;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="contact">
+      <h1 class="heading">Contact Section</h1>
+      <div class="line lc"></div>
+      <p>Government Junior College, Narnoor, Adilabad Dist-504311</p>
+      <p>Mobile no: 94416448962 , 7981223264 , 9491463505</p>
+      <p>Email: gjcnarnoor@gmail.com</p>
+    </div>
+    <div id="footer"></div>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    </script>
+
+   
+  </body>
+</html>
